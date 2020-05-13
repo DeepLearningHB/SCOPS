@@ -42,7 +42,7 @@ def concentration_loss(pred):
             v_x, v_y = get_variance(part_map_pdf, x_c, y_c)
             loss_per_part = (v_x + v_y)
             loss = loss_per_part + loss
-    loss = loss/B
+    #loss = loss/B
     return loss/B
 
 def semantic_consistency_loss(features, pred, basis):
